@@ -1,0 +1,6 @@
+<h1>Liste des Kittys retrouvés</h1>
+<% @pets.each do |pet| %>
+  <div class="pet">
+    <%= link_to pet.name, pet_path(pet) %>
+  </div>
+<% end %>

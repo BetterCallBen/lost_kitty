@@ -1,0 +1,11 @@
+<%= form_with model: @pet do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, placeholder: "Robert" %>
+  <%= f.label :species %>
+  <%= f.text_field :species %>
+  <%= f.label :found_date %>
+  <%= f.date_field :found_date %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <%= f.submit "Ce que tu veux", class: "blue" %>
+<% end %>
